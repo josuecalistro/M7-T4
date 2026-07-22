@@ -1,7 +1,14 @@
+// Colores principales
 $color-primary: #3498db;
 $color-secondary: #2ecc71;
-$color-danger: #e74c3c;
+$color-dark: #333;
+$color-light: #ffffff;
 
-$border-radius: 8px;
+// Bordes
+$border-radius: 10px;
 
-$spacing: 10px;
+// Espaciados
+$spacing: 20px;
+
+// Sombras
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

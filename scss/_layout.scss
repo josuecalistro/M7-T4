@@ -1,53 +1,29 @@
-@use "variables";
-@use "mixins";
+@use "variables" as *;
+@use "mixins" as *;
 
 
-.nav {
+.card {
 
-    @include mixins.flex-container {
+    @include card-style;
 
-        justify-content:space-between;
-        align-items:center;
-
-    }
+    background-color: $color-light;
+    color: $color-dark;
 
 }
 
 
-.container {
+.card-highlight {
 
-    padding:variables.$spacing;
+    @include card-style;
 
-}
-
-
-.botones {
-
-    display:flex;
-    gap:15px;
+    background-color: $color-primary;
+    color: $color-light;
 
 }
 
 
-.btn-primary {
+.button {
 
-    @include mixins.boton(variables.$color-primary);
-
-}
-
-
-.btn-secondary {
-
-    @include mixins.boton(
-        variables.$color-secondary,
-        20px
-    );
-
-}
-
-
-.btn-danger {
-
-    @include mixins.button-type("danger");
+    @include button-style;
 
 }

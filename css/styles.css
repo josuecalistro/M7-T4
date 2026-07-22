@@ -1,11 +1,47 @@
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 50 \2502          background-color:$color-danger;\d\a    \2502                           ^^^^^^^^^^^^^\a    \2575 \a   scss\\_mixins.scss 50:26  button-type()\a   scss\\_layout.scss 51:5   @use\a   scss\\styles.scss 4:1     root stylesheet";
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  color: #333;
 }
+
+.card-highlight {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #2ecc71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

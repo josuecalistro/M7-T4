@@ -1,8 +1,7 @@
 {
   "name": "proyecto-sass",
   "version": "1.0.0",
-  "description": "Proyecto utilizando SASS con mixins, extend y condicionales",
-  "main": "index.js",
+  "description": "Proyecto realizado con HTML, CSS y SASS",
   "scripts": {
     "sass": "sass scss/styles.scss css/styles.css --watch"
   },

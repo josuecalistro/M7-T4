@@ -1,62 +1,25 @@
-@mixin boton($color, $padding: 12px) {
+@use "variables" as *;
 
-    background-color: $color;
-    padding: $padding;
-    border-radius: 8px;
-    color:white;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-    transition:0.3s;
+@mixin card-style {
+
+    padding: $spacing;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+}
+
+
+@mixin button-style {
+
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    background-color: $color-primary;
+    color: $color-light;
+    border: none;
+    cursor: pointer;
 
     &:hover {
-
-        transform:translateY(-3px);
-        opacity:0.85;
-
-    }
-
-}
-
-
-@mixin flex-container {
-
-    display: flex;
-
-    @content;
-
-}
-
-
-@mixin button-type($type) {
-
-
-    @if $type == "primary" {
-
-        background-color: $color-primary;
-        color:white;
-
-    }
-
-    @else if $type == "secondary" {
-
-        background-color:$color-secondary;
-        color:white;
-
-    }
-
-    @else if $type == "danger" {
-
-        background-color:$color-danger;
-        color:white;
-
-    }
-
-    @else {
-
-        background-color:white;
-        color:black;
-
+        background-color: $color-secondary;
     }
 
 }
