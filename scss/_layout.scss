@@ -1,6 +1,10 @@
+@use "variables";
+@use "mixins";
+
+
 .nav {
 
-    @include flex-container {
+    @include mixins.flex-container {
 
         justify-content:space-between;
         align-items:center;
@@ -12,7 +16,7 @@
 
 .container {
 
-    padding:$spacing;
+    padding:variables.$spacing;
 
 }
 
@@ -27,15 +31,15 @@
 
 .btn-primary {
 
-    @include boton($color-primary);
+    @include mixins.boton(variables.$color-primary);
 
 }
 
 
 .btn-secondary {
 
-    @include boton(
-        $color-secondary,
+    @include mixins.boton(
+        variables.$color-secondary,
         20px
     );
 
@@ -44,6 +48,6 @@
 
 .btn-danger {
 
-    @include button-type("danger");
+    @include mixins.button-type("danger");
 
 }

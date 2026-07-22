@@ -19,3 +19,175 @@ h1 {
 
 }
 
+/* Reset básico */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+    color: #333;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+
+/* Título */
+
+h1 {
+
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+
+}
+
+
+/* Navegación */
+
+.nav {
+
+    background: #1e40af;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+
+}
+
+
+.nav a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+
+.nav a:hover {
+
+    color: #bfdbfe;
+
+}
+
+
+
+/* Botones */
+
+.botones {
+
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+
+button {
+
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+    opacity: 0.9;
+
+}
+
+
+
+/* Tarjetas */
+
+section:last-child {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+
+}
+
+
+
+.card,
+.card-highlight {
+
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+
+.card {
+
+    background: white;
+    border-left: 6px solid #3498db;
+
+}
+
+
+.card-highlight {
+
+    background: #2563eb;
+    color:white;
+
+}
+
+
+
+.card:hover,
+.card-highlight:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+.card h2,
+.card-highlight h2 {
+
+    margin-top:0;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:600px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+
+    .nav{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+}

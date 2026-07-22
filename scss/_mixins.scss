@@ -2,10 +2,19 @@
 
     background-color: $color;
     padding: $padding;
-    border-radius: $border-radius;
-    color: white;
-    border: none;
-    cursor: pointer;
+    border-radius: 8px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+
+    &:hover {
+
+        transform:translateY(-3px);
+        opacity:0.85;
+
+    }
 
 }
 
