@@ -1,0 +1,24 @@
+%card-base {
+
+    padding:20px;
+    border-radius:$border-radius;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+
+.card {
+
+    @extend %card-base;
+    background:white;
+
+}
+
+
+.card-highlight {
+
+    @extend %card-base;
+    background:$color-primary;
+    color:white;
+
+}

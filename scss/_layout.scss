@@ -1,0 +1,49 @@
+.nav {
+
+    @include flex-container {
+
+        justify-content:space-between;
+        align-items:center;
+
+    }
+
+}
+
+
+.container {
+
+    padding:$spacing;
+
+}
+
+
+.botones {
+
+    display:flex;
+    gap:15px;
+
+}
+
+
+.btn-primary {
+
+    @include boton($color-primary);
+
+}
+
+
+.btn-secondary {
+
+    @include boton(
+        $color-secondary,
+        20px
+    );
+
+}
+
+
+.btn-danger {
+
+    @include button-type("danger");
+
+}

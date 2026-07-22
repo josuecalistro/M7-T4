@@ -1,0 +1,12 @@
+{
+  "name": "proyecto-sass",
+  "version": "1.0.0",
+  "description": "Proyecto utilizando SASS con mixins, extend y condicionales",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}
