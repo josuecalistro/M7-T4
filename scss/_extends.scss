@@ -1,27 +1,20 @@
-@use "variables";
+@use "variables" as *;
 
+
+// Estilo base reutilizable
 
 %card-base {
 
-    padding:20px;
-    border-radius: variables.$border-radius;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    padding: $padding-card;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
 }
 
 
-.card {
+%title-base {
 
-    @extend %card-base;
-    background:white;
-
-}
-
-
-.card-highlight {
-
-    @extend %card-base;
-    background: variables.$color-primary;
-    color:white;
+    font-weight: bold;
+    color: $color-dark;
 
 }

@@ -1,14 +1,12 @@
-// Colores principales
+// Colores
 $color-primary: #3498db;
 $color-secondary: #2ecc71;
 $color-dark: #333;
-$color-light: #ffffff;
+$color-light: white;
 
-// Bordes
+// Tamaños
 $border-radius: 10px;
+$padding-card: 20px;
 
-// Espaciados
-$spacing: 20px;
-
-// Sombras
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// Configuración tema
+$theme: "light";

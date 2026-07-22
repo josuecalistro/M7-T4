@@ -1,9 +1,10 @@
 {
   "name": "proyecto-sass",
   "version": "1.0.0",
-  "description": "Proyecto realizado con HTML, CSS y SASS",
+  "description": "Proyecto realizado con SASS",
   "scripts": {
-    "sass": "sass scss/styles.scss css/styles.css --watch"
+    "sass": "sass scss/styles.scss css/styles.css --watch",
+    "build": "sass scss/styles.scss css/styles.min.css --style=compressed"
   },
   "devDependencies": {
     "sass": "^1.77.0"

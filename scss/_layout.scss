@@ -1,29 +1,70 @@
 @use "variables" as *;
 @use "mixins" as *;
+@use "extends" as *;
+
 
 
 .card {
 
-    @include card-style;
+    @extend %card-base;
 
     background-color: $color-light;
-    color: $color-dark;
 
 }
+
 
 
 .card-highlight {
 
-    @include card-style;
+    @extend %card-base;
 
     background-color: $color-primary;
-    color: $color-light;
+    color: white;
 
 }
 
 
+
+.title {
+
+    @extend %title-base;
+
+}
+
+
+
+// Uso de mixin
+
 .button {
 
     @include button-style;
+
+}
+
+
+
+// Condicional @if / @else
+
+.theme-box {
+
+
+    @if $theme == "light" {
+
+        background-color: white;
+        color: $color-dark;
+
+    }
+
+
+    @else {
+
+        background-color: $color-dark;
+        color: white;
+
+    }
+
+
+    padding: 20px;
+    border-radius: $border-radius;
 
 }

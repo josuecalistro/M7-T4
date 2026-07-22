@@ -1,13 +1,18 @@
 @use "variables" as *;
 
+
+// Mixin para tarjetas
+
 @mixin card-style {
 
-    padding: $spacing;
+    padding: $padding-card;
     border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
 }
 
+
+// Mixin botón
 
 @mixin button-style {
 
@@ -19,7 +24,9 @@
     cursor: pointer;
 
     &:hover {
+
         background-color: $color-secondary;
+
     }
 
 }

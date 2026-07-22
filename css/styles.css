@@ -1,29 +1,40 @@
-.card {
+.card, .card-highlight {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
+}
+
+.title {
+  font-weight: bold;
   color: #333;
 }
 
+.card {
+  background-color: white;
+}
+
 .card-highlight {
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #3498db;
-  color: #ffffff;
+  color: white;
 }
 
 .button {
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #3498db;
-  color: #ffffff;
+  color: white;
   border: none;
   cursor: pointer;
 }
 .button:hover {
   background-color: #2ecc71;
+}
+
+.theme-box {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 * {

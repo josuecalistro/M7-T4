@@ -1,6 +1,7 @@
 # Proyecto SASS
 
-Proyecto web desarrollado utilizando HTML5, CSS3 y SASS.
+Proyecto web desarrollado con HTML5, CSS3 y SASS aplicando modularización, variables, mixins, extends y condicionales.
+
 
 ## Tecnologías utilizadas
 
@@ -8,7 +9,13 @@ Proyecto web desarrollado utilizando HTML5, CSS3 y SASS.
 - CSS3
 - SASS
 - Node.js
-- Git y GitHub
+- Git
 
 
-## Estructura del proyecto
+## Instalación
+
+
+Clonar el repositorio:
+
+```bash
+git clone URL_DEL_REPOSITORIO
